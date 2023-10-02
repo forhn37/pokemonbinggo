@@ -118,13 +118,23 @@
         img.src = pokemonimage[i];
         ul.appendChild(img)
         imgsrc[i].style.width = '25vw'
+        imgsrc[i].textContent = 'o'
+        imgsrc[i].style.color = "red"
+        imgsrc[i].style.zIndex = '1';
         }
 
         // 클릭시 빨간원으로 체크되는 함수 작성
-        li.addEventListener('click',function(eventtarget) {
-            eventtarget.currentTarget.style.backgroundColor = "red"
+        
+        for(let i=0; i<16; i++) {
+        imgsrc[i].addEventListener('click',function(eventtarget) {
+            eventtarget.currentTarget.style.backgroundColor = 'red'
+            eventtarget.currentTarget.textContent = "o";
+            eventtarget.currentTarget.style.fontSize = "60px"
+            eventtarget.currentTarget.style.color = "red"
+            eventtarget.currentTarget.style.zIndex = 20;
+            console.log(eventtarget)
         })
-
+        }
     </script>
 </body>
 </html>
