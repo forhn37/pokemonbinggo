@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin :0px;
+            padding : 0;
+            box-sizing: border-box;
+        }
+        #root {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 20px;
+            color : red;
+            font-style: italic;
+        }
+        #button {
+            width: 100px;
+            height: 20px;
+            background-color: blanchedalmond;
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="root">
+        <h1>Pokemon Binggo</h1>
+        <h1>GAME</h1>
+        <input type ="button" id="button" value="START">
+    </div>
 </body>
 </html>
