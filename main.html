@@ -5,11 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    #root {
+        display: flex;
+        flex-direction: column;
+    }
+    #header {
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    #main {
+        height: 60vh;
+        width: 100vw;
+        background-color:gray;
+    }
+    #footer {
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    #random {
+        height: 80px;
+        width: 80px;
+    }
+    #binggo {
+        height: 80px;
+        width: 80px;
+    }
+    #ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #ul li {
+        width: 15vw;
+        height: 15vw;
+    }
+</style>
 <body>
     <div id="root">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id = "header">
+            <input type = "button" id="random" value="랜덤섞기">
+        </div>
+        <div id = "main">
+            <ul id = "ul">
+            </ul>
+        </div>
+        <div id = "footer">
+            <input type ="button" id="binggo" value ="빙고!">
+        </div>
     </div>
 </body>
 </html>
