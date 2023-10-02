@@ -112,13 +112,19 @@
         
         let ul = document.getElementById("ul")
         let imgsrc = document.getElementsByTagName("img")
-        
+        // li 생성함수 작성
         for(let i=0; i<16; i++) {
         let img = document.createElement("img")
         img.src = pokemonimage[i];
         ul.appendChild(img)
         imgsrc[i].style.width = '25vw'
         }
+
+        // 클릭시 빨간원으로 체크되는 함수 작성
+        li.addEventListener('click',function(eventtarget) {
+            eventtarget.currentTarget.style.backgroundColor = "red"
+        })
+
     </script>
 </body>
 </html>
